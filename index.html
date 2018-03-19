@@ -28,11 +28,11 @@ layout: default
   
   <h3 class="page-tag-cloud">Tags</h3>
   <ul class="tag-cloud">
-     {% for tag in site.tags %}
-     <li>
-       <a href="http://kafeintag.github.io/tags/#{{ tag | first | slugize }}">
+    {% for tag in site.tags %}
+      <li>
+        <a href="http://kafeintag.github.io/tags/#{{ tag | first | slugize }}">
          {{ tag | first | slugize }}</a>
-    </li>
+      </li>
     {% endfor %}
   </ul>
   <p class="rss-subscribe">subscribe <a href="{{ "http://kafeintag.github.io/feed.xml"|prepend: site.baseurl }}" > via RSS </a></p>
