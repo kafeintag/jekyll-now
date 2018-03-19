@@ -14,18 +14,27 @@ layout: default
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
-  <h2>more</h2>
+  <h2>Posts</h2>
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
       </li>
     {% endfor %}
   </ul>
+  
+  <h3 class="page-tag-cloud">Tags</h3>
+  <ul class="tag-cloud">
+     {% for tag in site.tags %}
+     <li>
+             <a href="http://kafeintag.gitlab.io/tags/#{{ tag | first | slugize }}">
+                 {{ tag | first | slugize }}</a>
+                       </li>
+                       {% endfor %}
+                       </ul>
+  <p class="rss-subscribe">subscribe <a href="{{ "http://kafeintag.gitlab.io/feed.xml"|prepend: site.baseurl }}" > via RSS </a></p>
 
-  {% endfor %}
 </div>
