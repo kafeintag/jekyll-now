@@ -1,15 +1,9 @@
 ﻿---
-
 layout: post
-
-title: 사뮈엘 베케트의 말없는 삶
-_나탈리 레제_김예령 번역
+title: 사뮈엘 베케트의 말없는 삶_나탈리 레제_김예령 번역
 tags: book korean
-
 published: true
-
 categories: jeong
-
 ---
 
 제목: 사뮈엘 베케트의 말없는 삶
